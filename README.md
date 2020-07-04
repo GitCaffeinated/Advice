@@ -1,0 +1,2 @@
+# browser
+A JavaScript project
