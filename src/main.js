@@ -1,3 +1,4 @@
+/* eslint-disable */
 const buttons = document.getElementById('buttons');
 
 /* const requestURL = 'https://api.adviceslip.com/advice';
@@ -13,13 +14,20 @@ request.send();
   adviceSpace.appendChild(adviceSpace);
 }; */
 
-buttons.onclick = function giveAdvice() {
-  const data = {};
+/* const data = {};
   fetch('https://api.adviceslip.com/advice', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(data),
-  }).then((res) => res.json()).then((datas) => console.log(datas));
+  }).then((res) => res.json()).then((datas) => alert(datas)); */
+
+buttons.onclick = function giveAdvice() {
+  fetch('https://api.adviceslip.com/advice')
+    .then(response => {
+      alert('approved')
+    }).catch(err => {
+      alert('rejected');
+    });
 };
