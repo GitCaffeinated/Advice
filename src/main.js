@@ -38,5 +38,8 @@ buttons.onclick = function giveAdvice() {
   })
   .then(data => {
     console.log(data);
+    let adviceReq = data.slip.advice;
+    console.log(adviceReq)
+    adviceTime.textContent=adviceReq;
   })
 }
