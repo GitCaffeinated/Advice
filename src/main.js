@@ -3,7 +3,9 @@ const adviceTime = document.createElement('p');
 buttons.after(adviceTime);
 
 buttons.onclick = function giveAdvice() {
-  fetch('https://api.adviceslip.com/advice')
+  fetch('https://api.adviceslip.com/advice', {
+    method: 'GET',
+  })
     .then((response) => {
       if (response.status === 200) {
         return response.json();
@@ -17,7 +19,5 @@ buttons.onclick = function giveAdvice() {
       // set advice to variable for ease
       adviceTime.textContent = adviceReq;
       // display advice on page
-    }).catch((error) => {
-      console.error(error);
     });
 };
