@@ -16,6 +16,8 @@ buttons.onclick = function giveAdvice() {
       const adviceReq = data.slip.advice;
       // set advice to variable for ease
       adviceTime.textContent = adviceReq;
-    // display advice on page
+      // display advice on page
+    }).catch((error) => {
+      console.error(error);
     });
 };
