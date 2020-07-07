@@ -1,5 +1,7 @@
 /* eslint-disable */
 const buttons = document.getElementById('buttons');
+const adviceTime = document.createElement("p");
+buttons.after(adviceTime);
 
 /* const requestURL = 'https://api.adviceslip.com/advice';
 const request = new XMLHttpRequest();
@@ -21,13 +23,20 @@ request.send();
       'Content-Type': 'application/json',
     },
     body: JSON.stringify(data),
-  }).then((res) => res.json()).then((datas) => alert(datas)); */
+  }).then((res) => res.json()).then((datas) => alert(datas)).catch(err => {
+      console.log('rejected: ', err);
+    });; */
 
 buttons.onclick = function giveAdvice() {
   fetch('https://api.adviceslip.com/advice')
-    .then(response => {
-      alert('approved')
-    }).catch(err => {
-      alert('rejected');
-    });
-};
+  .then(response => {
+    console.log('Resolved: ', response);
+    if (response.status === 200) {
+      return response.json();
+    }
+    throw new Error('Resource not found');
+  })
+  .then(data => {
+    console.log(data);
+  })
+}
