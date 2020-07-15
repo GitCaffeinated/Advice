@@ -1,7 +1,9 @@
 body {
   background-color: #bed0df;
-  text-align: center;
+  display: grid;
+  place-items: center;
 }
 #app {
   background-color: #3c641c;
+  padding: 3em;
 }
