@@ -7,4 +7,8 @@ body {
   background-color: #3c641c;
   padding: 3em;
   text-align: center;
+  border-radius: 15px 50px;
+}
+.borders {
+  border-radius: 15px 50px;
 }
