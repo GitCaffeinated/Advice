@@ -21,6 +21,11 @@ body {
   width: 300px;
   opacity: 0.5;
 }
+h1,
+h2,
+p {
+  color: #d8dbe0;
+}
 .bubbles {
   border-radius: 15px 50px;
   padding: 3em;
