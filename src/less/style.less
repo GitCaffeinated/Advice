@@ -9,17 +9,17 @@ body {
     display: grid;
     place-items: center;
 }
+
+#adviceBubble { // work on creating speech bubble effect
+    margin-top: 2em;
+    background-color: @textBubble;
+    .bubbles();
+}
+
 #app {
     background-color: @foreground;
     padding: 3em;
     text-align: center;
-    //opacity needed
-    .bubbles();
-}
-#adviceBubble { // work on creating speech bubble effect
-    margin-top: 2em;
-    background-color: @textBubble;
-
     .bubbles();
 }
 
@@ -29,4 +29,5 @@ body {
     padding: 3em;
     height: 150px;
     width: 300px;
+    opacity: 0.5;
 }

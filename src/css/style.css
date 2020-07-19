@@ -3,14 +3,6 @@ body {
   display: grid;
   place-items: center;
 }
-#app {
-  background-color: #3c641c;
-  text-align: center;
-  border-radius: 15px 50px;
-  padding: 3em;
-  height: 150px;
-  width: 300px;
-}
 #adviceBubble {
   margin-top: 2em;
   background-color: #36546D;
@@ -18,10 +10,21 @@ body {
   padding: 3em;
   height: 150px;
   width: 300px;
+  opacity: 0.5;
+}
+#app {
+  background-color: #3c641c;
+  text-align: center;
+  border-radius: 15px 50px;
+  padding: 3em;
+  height: 150px;
+  width: 300px;
+  opacity: 0.5;
 }
 .bubbles {
   border-radius: 15px 50px;
   padding: 3em;
   height: 150px;
   width: 300px;
+  opacity: 0.5;
 }
