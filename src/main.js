@@ -1,6 +1,7 @@
 const buttons = document.getElementById('buttons');
+const adviceBubble = document.getElementById('adviceBubble');
 const adviceTime = document.createElement('p');
-buttons.after(adviceTime);
+adviceBubble.appendChild(adviceTime);
 
 buttons.onclick = function giveAdvice() {
   fetch('https://api.adviceslip.com/advice', {
