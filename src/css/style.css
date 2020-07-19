@@ -5,15 +5,23 @@ body {
 }
 #app {
   background-color: #3c641c;
-  padding: 3em;
   text-align: center;
   border-radius: 15px 50px;
+  padding: 3em;
+  height: 150px;
+  width: 300px;
 }
 #adviceBubble {
-  height: 50px;
-  width: 50px;
-  background-color: blueviolet;
-}
-.borders {
+  margin-top: 2em;
+  background-color: #36546D;
   border-radius: 15px 50px;
+  padding: 3em;
+  height: 150px;
+  width: 300px;
+}
+.bubbles {
+  border-radius: 15px 50px;
+  padding: 3em;
+  height: 150px;
+  width: 300px;
 }

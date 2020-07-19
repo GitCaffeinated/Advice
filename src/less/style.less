@@ -2,6 +2,7 @@
 @background: #bed0df;
 @foreground: #3c641c;
 @text: #d8dbe0; //utilize darken function
+@textBubble: #36546D;
 
 body {
     background-color: @background;
@@ -13,15 +14,19 @@ body {
     padding: 3em;
     text-align: center;
     //opacity needed
-    .borders();
+    .bubbles();
 }
 #adviceBubble { // work on creating speech bubble effect
-    height:50px;
-    width: 50px;
-    background-color: blueviolet;
+    margin-top: 2em;
+    background-color: @textBubble;
+
+    .bubbles();
 }
 
 //mixins
-.borders {
+.bubbles {
     border-radius: 15px 50px;
+    padding: 3em;
+    height: 150px;
+    width: 300px;
 }
