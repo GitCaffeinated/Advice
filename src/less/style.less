@@ -1,8 +1,9 @@
 //variables
-@background: #bed0df;
-@foreground: #3c641c;
-@text: #d8dbe0; //utilize darken function
-@textBubble: #36546D;
+@background: #bcd2e3;
+@foreground: #7ea9c9;
+@text: #305673;
+@text-alt: darken(@text, 50%); //utilize darken function
+@textBubble: #E2EBF3;
 
 body {
     background-color: @background;
@@ -13,6 +14,8 @@ body {
 #adviceBubble { // work on creating speech bubble effect
     margin-top: 2em;
     background-color: @textBubble;
+    border: solid @text;
+    border-width: 1em;
     .bubbles();
 }
 
@@ -23,8 +26,11 @@ body {
     .bubbles();
 }
 h1, h2, p{
-    color: @text;
+    color: @text-alt;
 }
+
+//functions
+
 
 //mixins
 .bubbles {
@@ -32,5 +38,5 @@ h1, h2, p{
     padding: 3em;
     height: 150px;
     width: 300px;
-    opacity: 0.5;
+    //opacity: 0.5;
 }

@@ -1,35 +1,34 @@
 body {
-  background-color: #bed0df;
+  background-color: #bcd2e3;
   display: grid;
   place-items: center;
 }
 #adviceBubble {
   margin-top: 2em;
-  background-color: #36546D;
+  background-color: #E2EBF3;
+  border: solid #305673;
+  border-width: 1em;
   border-radius: 15px 50px;
   padding: 3em;
   height: 150px;
   width: 300px;
-  opacity: 0.5;
 }
 #app {
-  background-color: #3c641c;
+  background-color: #7ea9c9;
   text-align: center;
   border-radius: 15px 50px;
   padding: 3em;
   height: 150px;
   width: 300px;
-  opacity: 0.5;
 }
 h1,
 h2,
 p {
-  color: #d8dbe0;
+  color: #000000;
 }
 .bubbles {
   border-radius: 15px 50px;
   padding: 3em;
   height: 150px;
   width: 300px;
-  opacity: 0.5;
 }
