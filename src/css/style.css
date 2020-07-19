@@ -9,6 +9,11 @@ body {
   text-align: center;
   border-radius: 15px 50px;
 }
+#adviceBubble {
+  height: 50px;
+  width: 50px;
+  background-color: blueviolet;
+}
 .borders {
   border-radius: 15px 50px;
 }
