@@ -3,6 +3,7 @@ body {
   position: relative;
 }
 #adviceBubble {
+  visibility: hidden;
   background-color: #E2EBF3;
   border: solid #305673;
   border-width: 1em;

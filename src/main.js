@@ -3,6 +3,10 @@ const adviceBubble = document.getElementById('adviceBubble');
 const adviceTime = document.createElement('p');
 adviceBubble.appendChild(adviceTime);
 
+function changeVisibility() {
+  adviceBubble.style.visibility = 'visible';
+}
+
 buttons.onclick = function giveAdvice() {
   fetch('https://api.adviceslip.com/advice', {
     method: 'GET',
@@ -21,4 +25,5 @@ buttons.onclick = function giveAdvice() {
       adviceTime.textContent = adviceReq;
       // display advice on page
     });
+  changeVisibility();
 };
