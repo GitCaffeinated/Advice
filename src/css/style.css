@@ -1,7 +1,6 @@
 body {
   background-color: #bcd2e3;
-  display: grid;
-  place-items: center;
+  position: relative;
 }
 #adviceBubble {
   margin-top: 2em;
@@ -9,17 +8,28 @@ body {
   border: solid #305673;
   border-width: 1em;
   border-radius: 15px 50px;
-  padding: 3em;
-  height: 150px;
-  width: 300px;
+  padding: 4%;
+  height: 33%;
+  width: 33%;
 }
 #app {
   background-color: #7ea9c9;
+  padding: 3em;
   text-align: center;
   border-radius: 15px 50px;
-  padding: 3em;
-  height: 150px;
-  width: 300px;
+  padding: 4%;
+  height: 33%;
+  width: 33%;
+}
+#info {
+  display: grid;
+  place-items: center;
+}
+#svg_coffee {
+  left: 0;
+  position: absolute;
+  width: 50%;
+  height: 50%;
 }
 h1,
 h2,
@@ -28,7 +38,7 @@ p {
 }
 .bubbles {
   border-radius: 15px 50px;
-  padding: 3em;
-  height: 150px;
-  width: 300px;
+  padding: 4%;
+  height: 33%;
+  width: 33%;
 }
