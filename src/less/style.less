@@ -7,8 +7,7 @@
 
 body {
     background-color: @background;
-    display: grid;
-    place-items: center;
+    position: relative;
 }
 
 #adviceBubble { // work on creating speech bubble effect
@@ -26,8 +25,16 @@ body {
     .bubbles();
 }
 
+#info {
+    display: grid;
+    place-items: center;
+}
+
 #svg_coffee {
     //code to put it to the left-hand side
+    left: 0;
+    bottom: 0;
+    position: absolute;
 }
 
 h1, h2, p{
@@ -43,5 +50,4 @@ h1, h2, p{
     padding: 3em;
     height: 150px;
     width: 300px;
-    //opacity: 0.5;
 }
