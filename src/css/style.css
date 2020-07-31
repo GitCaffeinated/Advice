@@ -36,10 +36,9 @@ body {
   place-items: center;
 }
 #svg_coffee {
-  left: 0;
-  position: absolute;
-  width: 50%;
-  height: 50%;
+  position: sticky;
+  width: 35%;
+  height: 35%;
 }
 h1,
 h2,
@@ -52,4 +51,12 @@ p {
   padding: 1%;
   margin: auto;
   width: 33%;
+}
+@media screen and (max-width: 400px) {
+  #adviceBubble {
+    width: 90%;
+  }
+  #app {
+    width: 90%;
+  }
 }
