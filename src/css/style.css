@@ -45,6 +45,7 @@ h2,
 p {
   color: #12202b;
   font-family: Helvetica, sans-serif;
+  text-align: center;
 }
 .bubbles {
   border-width: 1em;
