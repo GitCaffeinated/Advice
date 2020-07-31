@@ -20,11 +20,18 @@ body {
 
 #app {
     background-color: @foreground;
-    height: 200px;
+    height: fit-content;
     .bubbles();
     text-align: center;
     margin-bottom: 10px;
     border: solid @foreground;
+}
+#buttons {
+    height: 25px;
+    border-radius: 50px;
+    background-color: @textBubble;
+    color: @text;
+    font-weight: bold;
 }
 
 #info {
