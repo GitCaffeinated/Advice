@@ -11,11 +11,12 @@ body {
 }
 
 #adviceBubble { // work on creating speech bubble effect
-    margin-top: 2em;
     background-color: @textBubble;
     border: solid @text;
     .bubbles();
     height: 100px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 3px @text-alt;
 }
 
 #app {
@@ -26,6 +27,7 @@ body {
     margin-bottom: 10px;
     border: solid @foreground;
 }
+
 #buttons {
     height: 25px;
     border-radius: 50px;
@@ -53,7 +55,6 @@ h1, h2, p {
 
 //mixins
 .bubbles {
-    border-radius: 15px 50px;
     border-width: 1em;
     padding: 1%;
     margin: auto;

@@ -3,20 +3,19 @@ body {
   position: relative;
 }
 #adviceBubble {
-  margin-top: 2em;
   background-color: #E2EBF3;
   border: solid #305673;
-  border-radius: 15px 50px;
   border-width: 1em;
   padding: 1%;
   margin: auto;
   width: 33%;
   height: 100px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 3px #12202b;
 }
 #app {
   background-color: #7ea9c9;
   height: fit-content;
-  border-radius: 15px 50px;
   border-width: 1em;
   padding: 1%;
   margin: auto;
@@ -49,7 +48,6 @@ p {
   font-family: Helvetica, sans-serif;
 }
 .bubbles {
-  border-radius: 15px 50px;
   border-width: 1em;
   padding: 1%;
   margin: auto;
